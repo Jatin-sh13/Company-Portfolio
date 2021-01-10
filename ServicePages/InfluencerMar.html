@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Marketing</title>
+    <link rel="shortcut icon" href="../Capture2.PNG">
+
+</head>
+<style>
+    .navbar-nav>li>.dropdown-menu {
+        margin-top: 10px;
+        display: block;
+        width: 500px;
+        background-color: black;
+        transform: scale(0);
+        transition: ease-out 0.5s;
+    }
+
+    .dropdown-menu {
+        color: white;
+    }
+
+    a.dropdown-item {
+        color: white;
+    }
+
+    a.dropdown-item:hover {
+        color: #9c3;
+        background-color: black;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        transform: scale(1);
+        display: block;
+    }
+
+    .heading-color {
+        color: #9c3;
+    }
+
+    .para-color {
+        color: white
+    }
+
+    body {
+        margin-right: 0;
+        padding: 0;
+        background-color: #000
+    }
+
+    .nav-link {
+        font-family: sans-serif
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px;
+        margin-right: 40px;
+        font-family: Helvetica
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        border-bottom: 2px solid #9c3;
+        color: #9c3
+    }
+
+    .navbar {
+        padding: 20px;
+        background-color: #000
+    }
+
+    .navbar-dark .navbar-brand {
+        color: #9c3;
+        font-size: 30px
+    }
+
+    #particles-js {
+        width: 100%;
+        height: 400px;
+        background-color: #000
+    }
+
+    #heading {
+        position: absolute;
+        color: #fff;
+        margin-top: 180px;
+        margin-left: 0%
+    }
+
+    #first-con-heading {
+        color: white;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #9c3;
+        margin-top: 20px;
+    }
+
+    .line {
+        background-color: white;
+        width: 200px;
+        height: 2px;
+    }
+
+    .sec-con {
+        color: white;
+    }
+
+    #sec-heading {
+        margin-top: 110px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        #sec-heading {
+            margin-top: 45px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        #sec-heading {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        h5#sec-heading {
+            font-size: 19px;
+        }
+
+        .navbar-nav>li>.dropdown-menu {
+            margin-top: 10px;
+            display: none;
+            width: 500px;
+            background-color: black;
+            transition: ease-out 0.5s;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        #sec-heading {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .navbar-nav>li>.dropdown-menu {
+            margin-top: 10px;
+            display: none;
+            width: 500px;
+            background-color: black;
+            transition: ease-out 0.5s;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        #sec-heading {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        #first-con-heading {
+            letter-spacing: 2px;
+        }
+
+        .navbar-nav>li>.dropdown-menu {
+            margin-top: 10px;
+            display: none;
+            width: 500px;
+            background-color: black;
+            transition: ease-out 0.5s;
+        }
+    }
+
+    .Al-footer {
+        background-color: #131212;
+        margin-top: 100px
+    }
+
+    #footer-heading {
+        color: #9c3;
+        padding-top: 80px
+    }
+
+    #six-heading {
+        padding: 10px;
+        color: grey
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Al Dubai Media</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./PublicRelation.html">Public
+                                        Relations</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./InstaManag.html">Instagram Management</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="#">Scripted Interviews</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./InfluencerMar.html">Influencer Marketing</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="#">Marketing Consultancy</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./BrandRepo.html">Brand Reputation</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./webdev.html">Website Development </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="#">Mobile App Development</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Appointment/Appointment.html">Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <div id="particles-js">
+        <div data-aos="zoom-in-up" data-aos-duration="2000">
+            <div class="container">
+                <div id="heading">
+                    <div>
+                        <center>
+                            <h2 style="font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Quisque nisl eros</h2><br />
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="first-con">
+        <h2 id="first-con-heading">Influencer Marketing</h2>
+        <center>
+            <div class="line"></div>
+        </center>
+    </div><br><br>
+    <div class="sec-con">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 id="sec-heading">Influencer marketing is booming in our part of the world, with companies moving
+                        away from
+                        traditional PR and advertising to harness the power of the individual. Influencers have
+                        transformed from a one man show into a fully integrated marketing strategy that can have real
+                        business impact. As a result, talent agencies are the new thing in the GCC and we will see more
+                        and more appearing, with influencer marketing supported by PR and digital strategy.</h5>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../utils/undraw_social_influencer_sgsv-removebg-preview.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third-con">
+        <div class="container">
+            <h4 class="heading-color">We got you covered in Dubai</h4>
+            <p class="para-color">Dubai is the hub for all this activity because it is the place where influencers from
+                across the region
+                gather to make their business deals. In this context, talent agencies are going to be the new meeting
+                place
+                for brands and influencers.</p>
+            <h4 class="heading-color">Why is influencer marketing agencies growing so much in this region?
+            </h4>
+            <p class="para-color">It is because GCC influencers are not like those in the USA and Europe, who have
+                limited scope. An influencer from Kuwait, for example, reaches the entire GCC region including Dubai,
+                Bahrain, Qatar, Lebanon, Iraq and beyond. It is now not uncommon to see consumers flying from Kuwait to
+                Dubai just to buy a certain product that they have seen an influencer championing.
+            </p>
+            <h4 class="heading-color">Influencer Marketing: Myth or Truth?
+            </h4>
+            <p class="para-color">Many consumers and companies believe that influencers are simply spoilt individuals
+                who have capitalised on their good looks or celebrity pals to turn their lives into an endless holiday.
+                This opinion could not be more wrong. Influencers work hard for their living and are some of the most
+                marketing savvy individuals out there. Competition is fierce among influencers and only great ideas will
+                land them a partnership with a renowned brand – this takes innovation and commitment to creating
+                exceptional content. They are also constantly on display, meaning they must uphold their reputations and
+                behave appropriately at all times, which is a tall order.
+            </p>
+            <h4 class="heading-color">Don’t believe us?
+            </h4>
+            <p class="para-color">If you need convincing then look no further than His Highness Sheikh Mohammed bin
+                Rashid Al Maktoum, Vice President and Prime Minister of the UAE and Ruler of Dubai, who is a great
+                supporter of Arab social media influencers and welcomes them to Dubai, calling it their ‘second home’.
+                Sheikh Mohammed has highlighted that the UAE will always be a melting point of the creative individuals
+                and bright minds that are able to make a positive change in people’s lives. He demonstrated his support
+                by awarding 40 influencers across various categories at the Arab Social Media Summit, and also launched
+                the Arab Social Media club this year to encourage development, progress and creativity among social
+                media influencers in the Arab world.
+
+            </p>
+            <h4 class="heading-color">We got your back
+            </h4>
+            <p class="para-color">
+                Many Dubai PR agencies are moving away from using macro-influencers and instead engaging
+                micro-influencers, because they are less expensive and have a more targeted reach. While
+                macro-influencers can have a breathtakingly high reach, they also have astronomical charges to match.
+                C&b is the best social media, public relations, and influencer marketing agency based in Dubai, UAE.
+            </p>
+            <p class="para-color">Companies are supporting micro-influencers that start out with quite a good reach, and
+                then growing their
+                campaigns in tandem with the influencer’s following over the long run. This is why businesses are
+                focusing on developing relationships with micro influencers at the outset of their careers, as their
+                early followers are usually considered to be their most loyal fans.. Marketing Consultancy</p>
+        </div>
+    </div>
+    <footer class="Al-footer">
+        <center>
+            <h1 id="footer-heading">Al Dubai Media</h1>
+            <p style="color: white;"><i class="fas fa-map-marker-alt" style="color: white;"></i> A-3013 Mazaya Centre,
+                160 Sheikh Zayed Collector
+                Road, Box 54250, Dubai United Arab Emirates</p>
+            <span style="color: white;"><i class="fas fa-phone-alt" style="color: white;"></i> +91 9958268849 </span>
+            <span style="color: white;"> <i class="fas fa-envelope" style="color: white;"></i> ceo@aldxbmedia.com</span>
+            <br><br><br><br>
+        </center>
+    </footer>
+    <div class="six-con">
+        <div class="container">
+            <div id="six-heading">
+                <p>All rights reserved | © 2020 Al Dubai Media</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../particles.js"></script>
+    <script type="text/javascript" src="../app.js"></script>
+</body>
+<script>
+    AOS.init();
+</script>
+
+</html>

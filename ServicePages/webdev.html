@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+    <link rel="shortcut icon" href="../Capture2.PNG">
+
+</head>
+<style>
+    body {
+        margin-right: 0;
+        padding: 0;
+        background-color: #000
+    }
+
+    .nav-link {
+        font-family: sans-serif
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px;
+        margin-right: 40px;
+        font-family: Helvetica
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        border-bottom: 2px solid #9c3;
+        color: #9c3
+    }
+
+    .navbar {
+        padding: 20px;
+        background-color: #000
+    }
+
+    .navbar-dark .navbar-brand {
+        color: #9c3;
+        font-size: 30px
+    }
+
+    #particles-js {
+        width: 100%;
+        height: 400px;
+        background-color: #000
+    }
+
+    #heading {
+        position: absolute;
+        color: #fff;
+        margin-top: 180px;
+        margin-left: 0%
+    }
+
+    #first-con-heading {
+        color: white;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #9c3
+    }
+
+    .line {
+        background-color: white;
+        width: 200px;
+        height: 2px;
+    }
+
+    .sec-con {
+        color: white;
+    }
+
+    .sec-heading {
+        margin-top: 70px;
+    }
+
+    .navbar-nav>li>.dropdown-menu {
+        margin-top: 10px;
+        display: block;
+        width: 500px;
+        background-color: black;
+        transform: scale(0);
+        transition: ease-out 0.5s;
+    }
+
+    .dropdown-menu {
+        color: white;
+    }
+
+    a.dropdown-item {
+        color: white;
+    }
+
+    a.dropdown-item:hover {
+        color: #9c3;
+        background-color: black;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        transform: scale(1);
+        display: block;
+    }
+
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        heading {
+            margin-top: 28px;
+        }
+    }
+
+    .Al-footer {
+        background-color: #131212;
+        margin-top: 100px
+    }
+
+    #footer-heading {
+        color: #9c3;
+        padding-top: 80px
+    }
+
+    #six-heading {
+        padding: 10px;
+        color: grey
+    }
+
+    .card {
+        background-color: black;
+        color: white;
+        box-shadow: 0px 0px 2px 0px #ccc;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        border: 2px solid #9c3;
+        box-shadow: 0 0px 3px 0 #ccc;
+    }
+
+    .four-con {
+        color: white;
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .card {
+            margin-top: 50px;
+        }
+
+        .navbar-nav>li>.dropdown-menu {
+            margin-top: 10px;
+            display: none;
+            width: 500px;
+            background-color: black;
+            transition: ease-out 0.5s;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .card {
+            margin-top: 50px;
+        }
+
+        .navbar-nav>li>.dropdown-menu {
+            margin-top: 10px;
+            display: none;
+            width: 500px;
+            background-color: black;
+            transition: ease-out 0.5s;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .card {
+            margin-top: 50px;
+        }
+
+        .navbar-nav>li>.dropdown-menu {
+            margin-top: 10px;
+            display: none;
+            width: 500px;
+            background-color: black;
+            transition: ease-out 0.5s;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Al Dubai Media</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./PublicRelation.html">Public
+                                        Relations</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./InstaManag.html">Instagram Management</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="#">Scripted Interviews</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./InfluencerMar.html">Influencer Marketing</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="#">Marketing Consultancy</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./BrandRepo.html">Brand Reputation</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./webdev.html">Website Development </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="#">Mobile App Development</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Appointment/Appointment.html">Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <div id="particles-js">
+        <div data-aos="zoom-in-up" data-aos-duration="2000">
+            <div class="container">
+                <div id="heading">
+                    <div>
+                        <center>
+                            <h2 style="font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Quisque nisl eros</h2><br />
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="first-con">
+        <h2 id="first-con-heading">Web Development</h2>
+        <center>
+            <div class="line"></div>
+        </center>
+    </div><br><br>
+    <div class="sec-con">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../utils/responsive.png" width="100px">
+                                <h5 class="card-title">Fully Responsive Design</h5>
+                                <p>Whether you are accessing your website from a laptop, smartphone or tablet, we
+                                    leverage
+                                    powerful, flexible technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../utils/cms.png" width="100px">
+                                <h5 class="card-title">CMS Customization</h5>
+                                <p>We can help you move your website to a simpler platform so that you can manage it
+                                    with
+                                    absolute ease!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../utils/speed (1).png" width="100px">
+                                <h5 class="card-title">Landing Page Optimization</h5>
+                                <p> Increase conversions and gain new leads on your website
+                                    landing pages with improved features,user experience (UX).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../utils/hand.png" width="100px">
+                                <h5 class="card-title">Payment Integration</h5>
+                                <p>We provide you with fully integrated and customized Ecommerce
+                                    setup and maintenance from certified experts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../utils/hosting (1).png" width="100px">
+                                <h5 class="card-title">Web Hosting</h5>
+                                <p>You don’t have to worry about website downtime because we assist you
+                                    with comprehensive web hosting services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../utils/domain-registration.png" width="100px">
+                                <h5 class="card-title">Domain Support</h5>
+                                <p>A important aspect, Search Berg provides full scale domain support service. This
+                                    includes securing,register your domain.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../utils/seo.png" width="100px">
+                                <h5 class="card-title">SEO Optimization</h5>
+                                <p>Our team of expert writers create engaging and relevant content for your new/existing
+                                    website
+                                    with proper meta and title for SEO.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../utils/maintenance.png" width="100px">
+                                <h5 class="card-title">Website Maintenance</h5>
+                                <p>Get content updates, design, database management. Fix site interface errors and
+                                    JavaScript coding, the whole works.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../utils/logo-design.png" width="100px">
+                                <h5 class="card-title">Logo/Banner Creation</h5>
+                                <p>Get logo's and banners designed by our professional graphic designers for your new
+                                    startup, small businesses,corporation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="four-con">
+        <div class="container">
+            <h2 style="color:#9c3;">You’ve Come to the Right Place For Analytics-Driven
+                Web Design and Development!</h2><br>
+            <h6>Need a fully customized e-commerce site for your online store?</h6>
+            <h6> Interested in a mobile-friendly site with secure login, shopping cart, and store checkout features?
+            </h6>
+            <p>Search Berg is an award-winning company that specializes in web design and development. Our team of
+                certified designers and web developers create a brand-new website for you in just 7 days! Our sites are
+                built on the most popular, robust, so you can rest assured that your website will stay up and running no
+                matter what happens.</p>
+        </div>
+    </div>
+    <footer class="Al-footer">
+        <center>
+            <h1 id="footer-heading">Al DUBAI MEDIA</h1>
+            <p style="color: white;"><i class="fas fa-map-marker-alt" style="color: white;"></i> A-3013 Mazaya Centre,
+                160 Sheikh Zayed Collector
+                Road, Box 54250, Dubai United Arab Emirates</p>
+            <span style="color: white;"><i class="fas fa-phone-alt" style="color: white;"></i> +91 9958268849 </span>
+            <span style="color: white;"> <i class="fas fa-envelope" style="color: white;"></i> ceo@aldxbmedia.com</span>
+            <br><br><br><br>
+        </center>
+    </footer>
+    <div class="six-con">
+        <div class="container">
+            <div id="six-heading">
+                <p>All rights reserved | © 2020 Al Dubai Media</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../particles.js"></script>
+    <script type="text/javascript" src="../app.js"></script>
+</body>
+<script>
+    AOS.init();
+</script>
+
+</html>

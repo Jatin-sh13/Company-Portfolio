@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Dubai Media|Home</title>
+    <link rel="shortcut icon" href="./Capture2.PNG">
+</head>
+<style>
+    .third-Con-Para {
+        font-family: Helvetica;
+    }
+
+    body {
+        margin-right: 0;
+        padding: 0;
+        background-color: #000
+    }
+
+    .nav-link {
+        font-family: sans-serif
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px;
+        margin-right: 50px;
+        font-family: Helvetica
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        border-bottom: 2px solid #9c3;
+        color: #9c3
+    }
+
+    .navbar {
+        padding: 20px;
+        background-color: #000
+    }
+
+    .navbar-dark .navbar-brand {
+        color: #9c3;
+        font-size: 30px
+    }
+
+    #particles-js {
+        width: 100%;
+        height: 700px;
+        background-color: #000
+    }
+
+    #heading {
+        position: absolute;
+        color: #fff;
+        margin-top: 280px;
+        margin-left: 11%
+    }
+
+    .first-con {
+        background-color: #131212;
+        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px
+    }
+
+    .second-con {
+        padding-top: 50px;
+        color: #fff
+    }
+
+    #second_con_heading {
+        margin-top: 100px
+    }
+
+    .line {
+        background-color: #9c3;
+        width: 200px;
+        height: 2px
+    }
+
+    .card {
+        box-shadow: -1px 1px 5px 0 #ccc;
+        border: 1px solid #9c3;
+        color: #fff;
+        background-color: #000
+    }
+
+    .forth_con {
+        color: #fff
+    }
+
+    .Article-btn {
+        padding: 10px;
+        background-color: #000;
+        box-shadow: 0 1px 3px 0 #ccc;
+        color: #9c3;
+        border-radius: 4px;
+        border: 1px solid #000;
+        cursor: pointer
+    }
+
+    .Article-btn:hover {
+        border: 1px solid #9c3;
+        color: #fff
+    }
+
+    .navbar-nav>li>.dropdown-menu {
+        margin-top: 10px;
+        display: block;
+        width: 500px;
+        background-color: black;
+        transform: scale(0);
+        transition: ease-out 0.5s;
+    }
+
+    .dropdown-menu {
+        color: white;
+    }
+
+    a.dropdown-item {
+        color: white;
+    }
+
+    a.dropdown-item:hover {
+        color: #9c3;
+        background-color: black;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        transform: scale(1);
+        display: block;
+    }
+
+    #third_con_heading {
+        color: #fff
+    }
+
+    .fifth-con {
+        color: #fff
+    }
+
+    .Al-footer {
+        background-color: #131212;
+        margin-top: 100px
+    }
+
+    #footer-heading {
+        color: #9c3;
+        padding-top: 80px
+    }
+
+    #six-heading {
+        padding: 10px;
+        color: grey
+    }
+
+    .Artist-btn {
+        background-color: black;
+        padding: 10px;
+        color: white;
+        border: 1px solid #9c3;
+        box-shadow: 0px 0px 2px 0 #ccc;
+    }
+
+    @media (max-width:576px) {
+        #heading {
+            margin-top: 188px;
+            margin-left: 0
+        }
+
+        #particles-js {
+            height: 500px
+        }
+
+        #second_con_heading {
+            margin-top: 0
+        }
+
+        .Article-btn {
+            margin-bottom: 20px;
+            color: white;
+            border: 1px solid #9c3;
+        }
+
+        .navbar-nav>li>.dropdown-menu {
+            margin-top: 10px;
+            display: none;
+            width: 500px;
+            background-color: black;
+            transition: ease-out 0.5s;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:991.98px) {
+        #heading h2 {
+            font-size: 24px
+        }
+
+        .Article-btn {
+            margin-bottom: 20px
+        }
+
+        .navbar-nav>li>.dropdown-menu {
+            margin-top: 10px;
+            display: none;
+            width: 500px;
+            background-color: black;
+            transition: ease-out 0.5s;
+        }
+    }
+
+    @media (min-width:576px) and (max-width:767.98px) {
+        #heading h2 {
+            font-size: 18px
+        }
+
+        .navbar-nav>li>.dropdown-menu {
+            margin-top: 10px;
+            display: none;
+            width: 500px;
+            background-color: black;
+            transition: ease-out 0.5s;
+        }
+    }
+
+    .forth_con a {
+        color: white;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Al Dubai Media</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./MusicMarketing.html/Music.html">Music Marketing</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Public Relations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./ServicePages/PublicRelation.html">Public
+                                        Relations</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./ServicePages/InstaManag.html">Instagram
+                                        Management</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="#">Scripted Interviews</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./ServicePages/InfluencerMar.html">Influencer
+                                        Marketing</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="#">Marketing Consultancy</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./ServicePages/BrandRepo.html">Brand Reputation</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="./ServicePages/webdev.html">Website Development </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="#">Mobile App Development</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Appointment/Appointment.html">Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <div id="particles-js">
+        <div data-aos="zoom-in-up" data-aos-duration="2000">
+            <div class="container">
+                <div id="heading">
+                    <div>
+                        <center>
+                            <h2 style="font-weight: 600;">THE FIRST PUBLIC RELATION AND SOCIAL MEDIA
+                            </h2><br />
+                            <h2> MANAGEMENT COMPANY IN DUBAI</h2>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="first-con">
+        <center>
+            <h3 style="color: white;">
+                Steering your business in the right direction so that your brand is seen<br> and heard in the right
+                places.
+            </h3>
+            <br>
+            <p style="color: grey;">We specialise in public relations, crisis management, media training, digital
+                marketing and social media <br>communications in Dubai, the UAE and the Middle East</p>
+        </center>
+
+    </div>
+    <div class="second-con">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 id="second_con_heading">Is your current Digital PR strategy getting you the media attention
+                        you
+                        deserve?</h2>
+
+                </div>
+                <div class="col-lg-6">
+                    <img src="./utils/undraw_all_the_data_h4ki-removebg-preview.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="third_con">
+        <div class="container">
+            <center>
+                <h1 id="third_con_heading">Lorem lipsun</h1>
+                <div class="line"></div>
+                <br>
+            </center><br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 style="color: #9c3;">Are you an Artist ?</h3>
+                                <p class="third-Con-Para">Our business is to amplify budding ideas, big or small,
+                                    through media relations,
+                                    social
+                                    media, content marketing or blockbuster events to get the right people talking.</p>
+                                <button class="Artist-btn">Visit Page</button>
+                            </div>
+                        </div>
+                    </div><br>
+                </div>
+                <div class="col-lg-6">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 style="color: #9c3;">Are you an business owner ?</h3>
+                                <p class="third-Con-Para">Maybe you're looking to tackle a delicate issue, magnify your
+                                    brand, give new
+                                    vitality to
+                                    a product or media train your executives? Whatever the situation, we can improve on
+                                    it.
+                                </p>
+                                <button class="Artist-btn">Visit Page</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="forth_con">
+        <br>
+        <center>
+            <h1>Our Services</h1>
+            <div class="line"></div>
+        </center><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <center>
+                            <span style="font-size: 4em; color: white;">
+                                <i class="fas fa-users-cog"></i>
+                            </span>
+                            <a href="./ServicePages/PublicRelation.html">
+                                <h4>Public Relation</h4>
+                            </a>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <center>
+                            <span style="font-size: 4em; color: white;">
+                                <i class="fab fa-instagram-square"></i>
+                            </span>
+                            <a href="./ServicePages/InstaManag.html">
+                                <h4>Instagram Management</h4>
+                            </a>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <center>
+                            <span style="font-size: 4em; color: white;">
+                                <i class="fas fa-scroll"></i>
+                            </span>
+                            <a href="#">
+                                <h4>Scripted Interviews</h4>
+                            </a>
+                        </center>
+                    </div>
+                </div>
+            </div><br><br><br><br>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <center>
+                            <span style="font-size: 4em;color: white; ">
+                                <i class="fas fa-chart-line"></i>
+                            </span>
+                            <a href="./ServicePages/InfluencerMar.html">
+                                <h4>Influencer Marketing</h4>
+                            </a>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <center>
+                            <span style="font-size: 4em; color: white;">
+                                <i class="fas fa-ad"></i>
+                            </span>
+                            <h4>Marketing Consultancy</h4>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <center>
+                            <span style="font-size: 4em;color: white;">
+                                <i class="fas fa-award"></i>
+                            </span>
+                            <a href="./ServicePages/BrandRepo.html">
+                                <h4>Brand Promotion</h4>
+                            </a>
+                        </center>
+                    </div>
+                </div>
+            </div><br><br><br><br>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <center>
+                            <span style="font-size: 4em; color: white;">
+                                <i class="fas fa-laptop-code"></i>
+                            </span>
+                            <a href="./ServicePages/webdev.html">
+                                <h4>Web Development</h4>
+                            </a>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <center>
+                            <span style="font-size: 4em; color: white;">
+                                <i class="fas fa-mobile-alt"></i>
+                            </span>
+                            <h4>App Development</h4>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="1500">
+                        <center>
+                            <span style="font-size: 4em;color: white;">
+                                <i class="fas fa-rocket"></i>
+                            </span>
+                            <h4>No Promo</h4>
+                        </center>
+                    </div>
+                </div>
+            </div><br><br>
+        </div>
+    </div><br><br>
+    <div class="fifth-con">
+        <div class="container">
+            <center>
+                <h1>Our Articles</h1>
+                <div class="line"></div>
+            </center><br><br>
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <center>
+                        <img src="https://images.unsplash.com/photo-1572375992501-4b0892d50c69?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80"
+                            width="100%"><br><br>
+                        <a href=""><button class="Article-btn">Visit Article</button></a>
+                    </center>
+
+                </div>
+                <div class="col-lg-6">
+
+                    <center><img
+                            src="https://images.unsplash.com/photo-1572375992501-4b0892d50c69?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80"
+                            width="100%"><br><br>
+                        <a><button class="Article-btn">Visit Article</button></a>
+                    </center>
+
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    </div>
+    </div><br>
+    <footer class="Al-footer">
+        <center>
+            <h1 id="footer-heading">Al DUBAI MEDIA</h1>
+            <p style="color: white;"><i class="fas fa-map-marker-alt" style="color: white;"></i> A-3013 Mazaya Centre,
+                160 Sheikh Zayed Collector
+                Road, Box 54250, Dubai United Arab Emirates</p>
+            <span style="color: white;"><i class="fas fa-phone-alt" style="color: white;"></i> +91 9958268849 </span>
+            <span style="color: white;"> <i class="fas fa-envelope" style="color: white;"></i> ceo@aldxbmedia.com</span>
+            <br><br><br><br>
+        </center>
+    </footer>
+    <div class="six-con">
+        <div class="container">
+            <div id="six-heading">
+                <p>All rights reserved | © 2020 Al Dubai Media</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+<script>
+    AOS.init();
+</script>
+
+</html>
